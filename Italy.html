@@ -45,7 +45,7 @@ var unemployment = d3.map();
 
 d3.csv("https://raw.githubusercontent.com/paolog89/ItalySVG/master/Unemployment2017.csv", function(data) { 
 	data.forEach(function(d) {
-		unemployment.set(d.id, +d.medianRentAsPercentageofIncome);
+		unemployment.set(d.id, +d.value);
 	})
 })
 
